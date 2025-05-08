@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import photo from '../assets/images/PHOTO.jpg';
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaPinterestP, FaBars, FaTimes, FaCode, FaPalette, FaLightbulb } from 'react-icons/fa';
+import photo from '../assets/images/photo_2.jpg';
+import { FaGithub, FaTwitter, FaLinkedinIn, FaInstagram, FaCode, FaPalette, FaLightbulb } from 'react-icons/fa';
 
 const SocialIcon = ({ color, icon }) => (
     <div
@@ -13,7 +13,6 @@ const SocialIcon = ({ color, icon }) => (
 
 const Home = () => {
     const [animateBackground, setAnimateBackground] = useState(false);
-    const [imageLoaded, setImageLoaded] = useState(false);
     const [imagePath, setImagePath] = useState(photo);
 
     useEffect(() => {
@@ -59,15 +58,11 @@ const Home = () => {
         // Check if image exists
         const img = new Image();
         img.onload = () => {
-            console.log("Image loaded successfully");
-            setImageLoaded(true);
+            // Image loaded successfully
         };
         img.onerror = () => {
-            console.error("Failed to load image at path:", photo);
             // Try with a different path format as fallback
-            console.log("Attempting fallback path");
             setImagePath('/src/assets/images/PHOTO.jpg'); // Fallback path
-            setImageLoaded(false);
         };
         img.src = photo;
 
@@ -101,7 +96,6 @@ const Home = () => {
             observer.observe(section);
         });
 
-
     }, []);
 
     return (
@@ -127,12 +121,21 @@ const Home = () => {
                     {/* Left Column - Text Content with enhanced styling */}
                     <div className="mb-8 relative">
                         {/* Social Icons - More visible on mobile and desktop */}
-                        <div className="absolute left-0 top-10 flex flex-col space-y-4 sm:space-y-6 ">
-                            <SocialIcon color="#E44D26" icon={<FaFacebookF className="text-white text-sm sm:text-xl" />} />
-                            <SocialIcon color="#1DA1F2" icon={<FaTwitter className="text-white text-sm sm:text-xl" />} />
-                            <SocialIcon color="#0A66C2" icon={<FaLinkedinIn className="text-white text-sm sm:text-xl" />} />
-                            <SocialIcon color="#E60023" icon={<FaPinterestP className="text-white text-sm sm:text-xl" />} />
+                        <div className="absolute left-0 top-10 flex flex-col space-y-4 sm:space-y-6">
+                            <a href="https://github.com/HARSHIT05060" target="_blank" rel="noopener noreferrer">
+                                <SocialIcon color="#000000" icon={<FaGithub className="text-white text-sm sm:text-xl" />} />
+                            </a>
+                            <a href="https://x.com/HARSHIT_0705?t=4k74N22N1CdA-sLev8HY9Q&s=09" target="_blank" rel="noopener noreferrer">
+                                <SocialIcon color="#1DA1F2" icon={<FaTwitter className="text-white text-sm sm:text-xl" />} />
+                            </a>
+                            <a href="https://www.linkedin.com/in/harshit-kapadia-872606228/" target="_blank" rel="noopener noreferrer">
+                                <SocialIcon color="#0A66C2" icon={<FaLinkedinIn className="text-white text-sm sm:text-xl" />} />
+                            </a>
+                            <a href="https://www.instagram.com/harshit.__.07?utm_source=qr&igsh=ZXAzN25ocjA1MXBl" target="_blank" rel="noopener noreferrer">
+                                <SocialIcon color="#E1306C" icon={<FaInstagram className="text-white text-sm sm:text-xl" />} />
+                            </a>
                         </div>
+
 
                         <div className="pl-12 sm:pl-20">
                             <div className="relative">
@@ -165,13 +168,14 @@ const Home = () => {
                                     by the readable content of a page layout. I create stunning web experiences
                                     that capture attention and deliver results.
                                 </p>
-
-                                <button className="bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:translate-y-[-2px] flex items-center group">
-                                    <span>Browse Projects</span>
-                                    <svg className="w-4 h-4 ml-2 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                                    </svg>
-                                </button>
+                                <a href="#projects">
+                                    <button className="bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:translate-y-[-2px] flex items-center group">
+                                        <span>Browse Projects</span>
+                                        <svg className="w-4 h-4 ml-2 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </button>
+                                </a>
 
                                 {/* Decorative dots */}
                                 <div className="absolute -left-8 bottom-0 flex flex-col space-y-1">
@@ -215,22 +219,17 @@ const Home = () => {
                             <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-blue-500 rounded-full"></div>
                         </div>
 
-                        {/* FIXED: Main Image Container with better visibility and fixed positioning */}
+                        {/* Main Image Container with better visibility and fixed positioning */}
                         <div className="absolute w-4/5 h-4/5 z-20 left-[10%] top-[10%] rounded-lg shadow-xl overflow-hidden">
                             {/* Profile photo container with fixed z-index and positioning */}
                             <div className="relative w-full h-full bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg">
-                                {/* Debug Log for Image State */}
-                                <div className="absolute top-0 left-0 z-40 text-xs bg-black bg-opacity-50 text-white p-1 hidden">
-                                    Image Status: {imageLoaded ? 'Loaded' : 'Not Loaded'}, Path: {imagePath}
-                                </div>
                                 {/* The image component with improved visibility and error handling */}
                                 <img
                                     src={imagePath}
                                     alt="Harshit Kapadia"
-                                    className="w-full h-full object-cover z-30 relative"
-                                    style={{ display: "block" }} /* Force display */
+                                    className="w-50 h-50 object-cover z-30 relative"
+                                    style={{ display: "block", width: "100%", height: "100%" }}
                                     onError={(e) => {
-                                        console.error("Image failed to load");
                                         e.target.style.display = "none";
                                         const fallbackDiv = document.getElementById('image-fallback');
                                         if (fallbackDiv) {

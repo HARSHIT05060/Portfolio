@@ -4,7 +4,8 @@ import resume from '../assets/PDF/RESUME.pdf';
 
 const Navbar = ({ activeNav, setActiveNav }) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const navItems = ['home', 'about', 'projects',"contact"];
+    const navItems = ['home', 'about', 'projects', "contact"];
+    const [hovered, setHovered] = useState(false);
 
     const handleNavClick = (navItem) => {
         setActiveNav(navItem);
@@ -20,12 +21,33 @@ const Navbar = ({ activeNav, setActiveNav }) => {
             <div className="container mx-auto px-4">
                 <div className="flex justify-between items-center py-4">
                     {/* Logo */}
-                    <div className="flex items-center group">
-                        <div className="relative w-6 h-6 bg-red-500 rounded-md mr-2 transition-transform duration-300 group-hover:rotate-12">
-                            <div className="absolute right-[-5px] top-[6px] w-3 h-0.5 bg-red-500"></div>
-                            <div className="absolute right-[-10px] top-[12px] w-3 h-0.5 bg-red-500"></div>
+                    <div
+                        className="flex items-center cursor-pointer"
+                        onMouseEnter={() => setHovered(true)}
+                        onMouseLeave={() => setHovered(false)}
+                    >
+                        <div className="relative flex items-center justify-center">
+                            {/* Main logo shape */}
+                            <div
+                                className={`w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg shadow-md flex items-center justify-center transition-all duration-300 ${hovered ? "transform -rotate-12 scale-110" : ""
+                                    }`}
+                            >
+                                {/* Letter P in white */}
+                                <span className="text-white font-bold text-xl">P</span>
+                            </div>
+
+                            {/* Decorative elements */}
+                            <div
+                                className={`absolute -right-1 -bottom-1 w-4 h-4 bg-amber-400 rounded-md transition-all duration-300 ${hovered ? "transform translate-x-1 translate-y-1" : ""
+                                    }`}
+                            />
                         </div>
-                        <h1 className="font-bold text-xl text-gray-800 group-hover:text-red-500 transition-colors">
+
+                        {/* Text */}
+                        <h1
+                            className={`ml-3 font-bold text-xl transition-colors duration-300 ${hovered ? "text-indigo-600" : "text-gray-800"
+                                }`}
+                        >
                             Portfolio
                         </h1>
                     </div>

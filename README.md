@@ -1,12 +1,57 @@
-# React + Vite
+# 🌟 Harshit Kapadia's Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my developer portfolio repository! This project showcases my skills, projects, and experiences as a passionate Full Stack Developer specializing in the MERN stack.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Click here to view my portfolio](https://harshitkapadia.vercel.app)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 About Me
+
+- 🔭 MERN Stack Developer (MongoDB, Express.js, React.js, Node.js)
+- 💻 Passionate about building responsive, user-friendly web applications
+- 🌱 Always learning new technologies, currently exploring AI/ML integration with web apps
+- 🚀 Open to opportunities and collaborations
+
+---
+
+## 💼 Projects Featured
+
+- **Farm2Fresh** – A farmer-to-consumer platform built with MERN stack  
+  [GitHub](https://github.com/HARSHIT05060/Farm2Fresh)
+
+- **Progressive CCTV** – Smart surveillance system with object detection  
+  [GitHub](https://github.com/HARSHIT05060/Progressive)
+
+- More projects on my [GitHub Profile](https://github.com/HARSHIT05060)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React.js, Tailwind CSS 
+- **Database**: MongoDB  
+- **Tools & Platforms**: Git, GitHub, Vercel, Netlify
+
+---
+
+## 📫 Contact Me
+
+- 📧 Email: kapadiaharshit563@gmail.com  
+- 💼 LinkedIn: [https://www.linkedin.com/in/harshit-kapadia-872606228]
+
+---
+
+## 📂 Folder Structure
+
+```bash
+portfolio/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   └── assets/
+├── package.json
+└── README.md

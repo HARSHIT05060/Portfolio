@@ -1,4 +1,5 @@
 import React from "react";
+import photo_3 from "../assets/images/photo_3.jpg"; // Import your image here
 
 const Footer = () => {
     return (
@@ -8,7 +9,7 @@ const Footer = () => {
                 {/* Profile Section */}
                 <div className="flex flex-col items-center md:items-start">
                     <img
-                        src="https://api.dicebear.com/6.x/thumbs/svg?seed=Harshit"
+                        src={photo_3}
                         alt="Profile"
                         className="w-28 h-28 rounded-full border-4 border-red-400 object-cover shadow-md"
                     />

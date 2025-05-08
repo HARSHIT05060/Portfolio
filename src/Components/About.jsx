@@ -1,4 +1,5 @@
 // import { useState } from 'react';
+import photo_1 from "../assets/images/photo_2.jpg"; 
 
 export default function About() {
   return (
@@ -21,7 +22,7 @@ export default function About() {
           <div className="absolute inset-0 bg-purple-500 transform rotate-6 rounded-xl"></div>
           <div className="relative z-10 border-2 border-gray-300 rounded-xl overflow-hidden transform -rotate-3 shadow-lg">
             <img
-              src="/api/placeholder/400/500"
+              src={photo_1}
               alt="Professional developer"
               className="w-full object-cover"
             />
