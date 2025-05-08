@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+body {
+    -webkit-font-smoothing: antialiased;
+    /* For Webkit-based browsers like Chrome */
+    -moz-osx-font-smoothing: grayscale;
+    /* For Firefox */
+}
+
+html {
+    scroll-behavior: smooth;
+}
