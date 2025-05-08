@@ -4,7 +4,7 @@ Welcome to my developer portfolio repository! This project showcases my skills, 
 
 ## 🔗 Live Demo
 
-[Click here to view my portfolio](https://harshitkapadia.vercel.app)
+[Click here to view my portfolio](https://harshit-kapadia-portfolio.vercel.app/)
 
 ---
 
@@ -40,7 +40,7 @@ Welcome to my developer portfolio repository! This project showcases my skills, 
 ## 📫 Contact Me
 
 - 📧 Email: kapadiaharshit563@gmail.com  
-- 💼 LinkedIn: [https://www.linkedin.com/in/harshit-kapadia-872606228]
+- 💼 LinkedIn: [linkedin.com/in/harshit-kapadia-872606228](https://www.linkedin.com/in/harshit-kapadia-872606228)
 
 ---
 
