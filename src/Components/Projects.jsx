@@ -1,5 +1,5 @@
 import { Github, Eye, Star, Calendar, ArrowUpRight } from 'lucide-react';
-import f2f_logo from '../assets/Images/f2f_logo.jpg';
+import f2f_logo from '../assets/images/f2f_logo.jpg';
 import progressive_logo from '../assets/images/progressive_logo.png';
 import portfolio_logo from '../assets/images/portfolio_logo.jpeg';
 import docusync_logo from '../assets/images/docusync_logo.png';
