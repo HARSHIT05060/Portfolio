@@ -37,8 +37,8 @@ export default function Project() {
       title: "Portfolio Website",
       category: "Web Development",
       image: portfolio_logo,
-      liveLink: "https://example.com/project4", // Replace with actual link if available
-      githubLink: "https://github.com/yourusername/project4",
+      liveLink: "https://harshit-kapadia-portfolio.vercel.app/", // Replace with actual link if available
+      githubLink: "https://github.com/HARSHIT05060/Portfolio",
       message:
         "A personal portfolio website to showcase my projects, skills, and resume. Features responsive design, dark/light mode, and animated transitions.",
       technologies: ["React", "MUI", "Tailwind CSS",],
